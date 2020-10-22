@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - enemy
+  - collectable
+  - deathZone
   layers:
   - Default
   - TransparentFX
@@ -17,13 +20,13 @@ TagManager:
   - 
   - 
   - player
-  - 
+  - collectable
   - tilemap
   - foreground
   - background
   - 
   - 
-  - 
+  - test
   - 
   - 
   - 

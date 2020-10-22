@@ -226,6 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1072091426512551726}
   moveSpeed: 40
+  timer: 0
   animator: {fileID: 1072091426512551727}
 --- !u!114 &1072091426512551726
 MonoBehaviour:
