@@ -76,6 +76,8 @@ GameObject:
   - component: {fileID: 1072091426512551713}
   - component: {fileID: 1072091426512551726}
   - component: {fileID: 1072091426512551727}
+  - component: {fileID: 1831525160053506932}
+  - component: {fileID: 1046357809013593470}
   m_Layer: 11
   m_Name: player
   m_TagString: Untagged
@@ -225,7 +227,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1072091426512551726}
+  respawn: {fileID: 0}
   moveSpeed: 40
+  timer: 0
   animator: {fileID: 1072091426512551727}
 --- !u!114 &1072091426512551726
 MonoBehaviour:
@@ -274,3 +278,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1831525160053506932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072091426512551719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291a11228792926438c9369db9770486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPoint: {fileID: 0}
+  player: {fileID: 1072091426512551715}
+--- !u!114 &1046357809013593470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072091426512551719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f2fe699afe4944ca40556f18ddac7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cherryCounter: 0
