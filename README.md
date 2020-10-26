@@ -17,7 +17,7 @@
 ![Unity](https://github.com/ramosbe/diver-city/blob/master/img/iconfinder_Unity.png "Unity")
 ![Visual Studio](https://github.com/ramosbe/diver-city/blob/master/img/iconfinder_Visual_Studio.png "Visual Studio")
 ![Visual Studio Code](https://github.com/ramosbe/diver-city/blob/master/img/iconfinder_Visual_Code.png "Visual Studio Code")
-![Github](https://github.com/ramosbe/diver-city/blob/master/img/iconfinder_social_github.png "Github")
+![Github](https://github.com/ramosbe/diver-city/blob/master/img/iconfinder_github.png "Github")
 
 ---
 
