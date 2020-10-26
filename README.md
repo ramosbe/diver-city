@@ -5,7 +5,7 @@
 > leverage our understanding of both the Unity platform and the C# language.
 ---
 ### Group Members
-* [Baljot Hansi](https://github.com/) 
+* [Baljot Hansi](https://github.com/bhansi) 
 * [Bill Shema](https://github.com/nohack11)
 * [Christopher Rafinski](https://github.com/brofinski)
 * [Curtis Deslippe](https://github.com/cursit2)
