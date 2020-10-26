@@ -14,10 +14,10 @@
 ---
 
 ### Tools Used 
-![Unity](Assets/img/iconfinder_Unity.png "Unity")
-![Visual Studio](Assets/img/iconfinder_Visual_Studio.png "Visual Studio")
-![Visual Studio Code](Assets/img/iconfinder_Visual_Code.png "Visual Studio Code")
-![Github](Assets/img/iconfinder_social_github.png "Github")
+![Unity](https://github.com/ramosbe/diver-city/blob/master/img/iconfinder_Unity.png "Unity")
+![Visual Studio](https://github.com/ramosbe/diver-city/blob/master/img/iconfinder_Visual_Studio.png "Visual Studio")
+![Visual Studio Code](https://github.com/ramosbe/diver-city/blob/master/img/iconfinder_Visual_Code.png "Visual Studio Code")
+![Github](https://github.com/ramosbe/diver-city/blob/master/img/iconfinder_social_github.png "Github")
 
 ---
 
