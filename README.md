@@ -1,5 +1,5 @@
 # Diver-City (pronounced Diversity)
-![Diversity Game Photo](Assets/img/divercity-game.png)
+![Diversity Game Photo](https://github.com/ramosbe/diver-city/blob/master/img/divercity-game.png)
 > Diver-City is building a 2D platformer-type video game. We chose this as our
 > project because we think it will be fun and within our abilities. We strongly believe this will
 > leverage our understanding of both the Unity platform and the C# language.
