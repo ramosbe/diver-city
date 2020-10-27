@@ -138,7 +138,7 @@ public class CharacterController2D : MonoBehaviour
     }
 	public bool canStand()
     {
-		if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius) == true)
+		if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius) == true && Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius).tag !="sign") 
 		{
 			return false;
 		}

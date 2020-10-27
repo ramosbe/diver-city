@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5741334252312001703}
   - component: {fileID: 5741334252312001700}
   - component: {fileID: 5741334252312001696}
+  - component: {fileID: 8112298458998940928}
   m_Layer: 11
   m_Name: Frog_Enemy
   m_TagString: enemy
@@ -150,3 +151,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8112298458998940928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5741334252312001701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86861b0a0b5c4dd4ab0a4e9e27e7a4e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frogRigidBody2D: {fileID: 5741334252312001703}
+  frogAnimator: {fileID: 5741334252312001696}

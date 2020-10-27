@@ -401,6 +401,18 @@ Transform:
   m_Father: {fileID: 570605515}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &413168232 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1831525160053506932, guid: 945c1737f07251a4ebd6e82ad2607949,
+    type: 3}
+  m_PrefabInstance: {fileID: 1072091425929094118}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291a11228792926438c9369db9770486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &418891870
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,38 +916,6 @@ Transform:
   m_Father: {fileID: 570605515}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1534250213 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5741334252312001701, guid: fe02d90a9a7d81442adfdb365e351e03,
-    type: 3}
-  m_PrefabInstance: {fileID: 5741334251998449661}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1534250214 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5741334252312001696, guid: fe02d90a9a7d81442adfdb365e351e03,
-    type: 3}
-  m_PrefabInstance: {fileID: 5741334251998449661}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1534250216 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 5741334252312001703, guid: fe02d90a9a7d81442adfdb365e351e03,
-    type: 3}
-  m_PrefabInstance: {fileID: 5741334251998449661}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1534250219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1534250213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86861b0a0b5c4dd4ab0a4e9e27e7a4e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frogRigidBody2D: {fileID: 1534250216}
-  frogAnimator: {fileID: 1534250214}
 --- !u!1 &1539046711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,6 +1425,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1072091426512551713, guid: 945c1737f07251a4ebd6e82ad2607949,
+        type: 3}
+      propertyPath: respawn
+      value: 
+      objectReference: {fileID: 413168232}
     - target: {fileID: 1072091426512551715, guid: 945c1737f07251a4ebd6e82ad2607949,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 1046357809013593470}
   m_Layer: 11
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -229,6 +229,7 @@ MonoBehaviour:
   controller: {fileID: 1072091426512551726}
   respawn: {fileID: 0}
   moveSpeed: 40
+  horizontalMove: 0
   timer: 0
   animator: {fileID: 1072091426512551727}
 --- !u!114 &1072091426512551726
@@ -305,3 +306,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cherryCounter: 0
+  counterOpen: 1

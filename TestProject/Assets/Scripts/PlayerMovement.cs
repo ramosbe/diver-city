@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController2D controller;
     public Respawn respawn;
     public float moveSpeed = 40f;
-    float horizontalMove = 0f;
+    public float horizontalMove = 0f;
     bool jump = false;
     bool crouch = false;
     bool hasJumped = false;
@@ -41,16 +41,16 @@ public class PlayerMovement : MonoBehaviour
         if (alive) //if player is alive do stuff
         {
             //animations
-            if (crouch == false && controller.isGrounded())
+            if (crouch == false && controller.isGrounded()) //not crouch or and on ground
             {
-                if (Input.GetButtonDown("Jump") && controller.isGrounded())
+                if (Input.GetButtonDown("Jump") && controller.isGrounded()) //change to jump animation
                 {
                     jump = true;
                     ChangeAnimationState(PLAYER_JUMP);
                     hasJumped = true;
                     Invoke("ChangeJumpState", 0.1f);
                 }
-                if (!hasJumped)
+                if (!hasJumped) //if not jump, do idle or run
                 {
                     if (horizontalMove == 0 && controller.isGrounded())
                     {
@@ -62,20 +62,20 @@ public class PlayerMovement : MonoBehaviour
                     }
                 }
             }
-            if (Input.GetButtonDown("Crouch") && controller.isGrounded())
+            if (Input.GetButtonDown("Crouch") && controller.isGrounded()) //if crouch
             {
                 crouch = true;
                 ChangeAnimationState(PLAYER_CROUCH);
             }
-            else if (Input.GetButtonUp("Crouch") && controller.canStand())
+            else if (Input.GetButtonUp("Crouch") && controller.canStand()) //if player can stand change idle
             {
                 crouch = false;
                 ChangeAnimationState(PLAYER_IDLE);
             }
-            if (!Input.GetButton("Crouch") && controller.canStand())
+            if (!Input.GetButton("Crouch") && controller.canStand()) //player moves to where they can stand, change to idle
             {
                 crouch = false;
-                ChangeAnimationState(PLAYER_IDLE);
+               // ChangeAnimationState(PLAYER_IDLE);
             }
         }
         else { //not alive

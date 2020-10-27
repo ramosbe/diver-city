@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-10-25T19:30:23.140-04:00
-  initializedAtString: 2020-10-25T19:30:23.140-04:00
+  lastUpdatedAtString: 2020-10-26T20:35:15.335-04:00
+  initializedAtString: 2020-10-26T20:35:01.157-04:00
   currentGitRemote:
     name: origin
     url: https://github.com/ramosbe/diver-city.git
@@ -24,10 +24,10 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: 
+    name: master
     tracking: 
   currentConfigBranch:
-    name: 
+    name: master
     remote:
       name: 
       url: 
