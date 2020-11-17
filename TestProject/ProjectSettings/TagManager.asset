@@ -8,6 +8,7 @@ TagManager:
   - collectable
   - deathZone
   - sign
+  - pause
   layers:
   - Default
   - TransparentFX

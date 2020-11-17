@@ -27,7 +27,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        respawn = gameObject.AddComponent<Respawn>();
         animator = GetComponent<Animator>();
         timer = timerStart;
     }
@@ -114,7 +113,7 @@ public class PlayerMovement : MonoBehaviour
                 timer = 0;
         }else if (Input.GetButtonUp("Jump"))
         {
-           // timer = timerStart;
+           //  timer = timerStart;
             jump = false;
         }
         if (controller.isGrounded())

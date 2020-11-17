@@ -15,15 +15,24 @@ Review this video: https://www.youtube.com/watch?v=1NCvpZDtTMI&ab_channel=Mister
 6) From Canvas, drag in the 'dialog box' UI item into "Dialog Box" of component (dialog box UI item is the white background the text appears on)
 7) drag in the "Text" UI component from Scene into "Dialog Text" of component (looks like only one is needed)
 8) Fill 'Dialog' inside the script component with the text to display in game (modify each sign's text here)
+=-=-= for the 'press enter' prompt: =-=-=
+9) Under 'Canvas;, create a new UI object -> text, and place it properly on the screen
+10) add 'press enter' or whatever text you want
+11) untick the 'set active' box to hide it from the view
+12) drag that object into the sign's "Enter Prompt" component in the inspector
+
 */
 
 public class signScript : MonoBehaviour
 {
 
     public GameObject dialogBox;
+    public GameObject pressEnterPrompt;
     public Text dialogText;
     public string dialog;   
     public bool playerInRange;
+    public bool isFlickering = false;
+    public bool isReading = false;
 
     // Start is called before the first frame update
     void Start()
@@ -34,14 +43,35 @@ public class signScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(playerInRange && isReading == false) {
+            if(isFlickering == false) {
+                StartCoroutine(FlickeringMessage());
+            }
+        } else {
+            StopCoroutine(FlickeringMessage());
+        }
+       
         if(Input.GetKeyDown(KeyCode.Return) && playerInRange) {
             if(dialogBox.activeInHierarchy) {
                 dialogBox.SetActive(false);
+                //StopCoroutine(FlickeringMessage());
+                isReading = false;
             } else {
+                isReading = true;
+                pressEnterPrompt.SetActive(false);
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
             }
         }
+    }
+
+    IEnumerator FlickeringMessage() {
+        isFlickering = true;
+        pressEnterPrompt.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        pressEnterPrompt.SetActive(false);
+        yield return new WaitForSeconds(0.2f);
+        isFlickering = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
