@@ -33,7 +33,7 @@ public class Respawn : MonoBehaviour
         alive = true;
         player.position = respawnPoint.position;
     }
-    //CALLED BY PLAYERMOVEMENT
+    //CALLED BY PLAYERMOVEMENT and FrogRespawn
     public bool IsAlive()
     {
         return alive;

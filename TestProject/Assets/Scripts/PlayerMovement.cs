@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private float timerStart = 0.18f;
     public float timer;
     private float jumpForce;
+    private AudioSource[] jumpSound; // array, because player has more than one audio source component
 
     public Animator animator;
     private string currentState = PLAYER_IDLE;
@@ -29,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         timer = timerStart;
+        jumpSound = GetComponents<AudioSource>();
     }
 
     void Update()
@@ -44,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (Input.GetButtonDown("Jump") && controller.isGrounded()) //change to jump animation
                 {
+                    jumpSound[1].Play(); // uses second audio source component in player
                     jump = true;
                     ChangeAnimationState(PLAYER_JUMP);
                     hasJumped = true;

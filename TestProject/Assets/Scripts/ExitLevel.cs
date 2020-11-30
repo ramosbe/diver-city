@@ -7,12 +7,13 @@ public class ExitLevel : MonoBehaviour
 {
     // Start is called before the first frame update
     private bool playerInRange;
+    
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return) && playerInRange)
         {
-            SceneManager.LoadScene("Level02");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
