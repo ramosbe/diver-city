@@ -31,11 +31,11 @@ git clone https://github.com/ramosbe/diver-city.git
 cd diver-city
 
 #   Open TestProject folder using Unity for Windows
-#   Open TestProject folder Unity Hub for Macs OS
+#   Open TestProject folder using Unity Hub for MacOS
 ```
 ### ___Downloading and Playing Zorro's Quest___
 
- Download the ZIP files, and Unzip it and Run **Zorro's Quest.exe on Windows 64 bit** or  **MacOS_Zorro's Quest on MacOs**
+ Download the ZIP files, and Unzip them and Run **Zorro's Quest.exe on Windows 64 bit** or  **MacOS_Zorro's Quest on MacOs**
 
  Macos: <a id="raw-url" href="https://github.com/ramosbe/diver-city/blob/master/MacOs_Zorro's%20Quest.zip">MacOS_Zorro's Quest</a>
 
